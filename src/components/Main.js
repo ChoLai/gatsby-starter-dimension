@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 
 import pic01 from '../images/resume.jpg'
 import pic02 from '../images/edf_logo.jpg'
-import pic03 from '../images/ut_logo.jpg'
-import pic04 from '../images/nju_logo.jpg'
+import pic03 from '../images/ut_logo.png'
+import pic04 from '../images/nju_logo.png'
 
 class Main extends React.Component {
   render() {
@@ -22,27 +22,42 @@ class Main extends React.Component {
 
         <article id="projects" className={`${this.props.article === 'projects' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
           <h2 className="major">Projects</h2>
-          <span className="image main"><img src={pic02} alt="" /></span>
-          <p>Texas LMI Energy Efficiency Solutions (2018-2019)
-          <p>Supervisor: Sarah Ryan
-          <p>We collaborated with the Texas Energy Poverty Research Institute (TEPRI) and the Lyndon B. Johnson School of Public Affairs to collect and analyze energy usage data. This provided policy and market-based energy efficiency solutions for Texas low-moderate income (LMI) households.
-
-          <p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+            <p className="project">
+              <span className="image project"><img src={pic02} alt="" /></span>
+              <span>Texas LMI Energy Efficiency Solutions (2018-2019)</span>
+              <br/>
+              <span>Supervisor: Sarah Ryan</span>
+              <br/>
+              <br/>
+              <p>We collaborated with the Texas Energy Poverty Research Institute (TEPRI) and the Lyndon B. Johnson School of Public Affairs to collect and analyze energy usage data. This provided policy and market-based energy efficiency solutions for Texas low-moderate income (LMI) households.</p>
+            </p>
+            <p className="project">
+              <span className="image project"><img src={pic03} alt="" /></span>
+              <span>Macroscale modeling linking energy and economics (2016-2018)</span>
+              <br/>
+              <span>Supervisor: Carey King, PhD</span>
+              <br/>
+              <br/>
+              <p>The goal of the study was to further develop a model that links biophysical and economic fundamentals within a cohesive framework. Based on the “HANDY” biophysical model and the Goodwin economic model, a merged model was developed to simulate the dynamics of an integrated system associating natural resources and economics.<br/>Interactive UI: TO BE UPDATED</p>
+              <span>Do Google search trends allow us to better understand residential adoption of solar? (2017-2018)</span>
+              <br/>
+              <span>Group members: Ghida Ismail, Ryan Williams</span>
+              <br/>
+              <span>Supervisor: Varun Rai, PhD</span>
+              <br/>
+              <br/>
+              <p>Based on the analysis of Google Trends data, PV installation data, energy usage data as well as demographic data, new predictive models were built and tested as a step to study whether internet or online social media activity will improve the prediction of the PV diffusion at different geographic and time scales in the United States.</p>
+            </p>
+            <p className="project">
+              <span className="image project"><img src={pic04} alt="" /></span>
+              <span>Bachelor’s Thesis: The Climatic Effects of Tropospheric Ozone in summer around China (2015-2016)</span>
+              <br/>
+              <span>Supervisor: Shu Li, PhD</span>
+              <br/>
+              <br/>
+              <span>In the study, climate data for China during the summers of 1850 and 2001-2010 was used in Regional Climate Model 4.0 (RegCM4) to simulate the distribution and variation of tropospheric ozone and other related factors. The modelling products as well as the observational data revealed the variation of ozone and its impacts on the radiation, temperature, wind fields and precipitation in summer after Industrial Revolution around China.</span>
+            </p>
           {close}
-          <span className="image main"><img src={pic03} alt="" /></span>
-          <p>Macroscale modeling linking energy and economics (2016-2018)
-          <p>Supervisor: Carey King, PhD
-          <p>The goal of the study was to further develop a model that links biophysical and economic fundamentals within a cohesive framework. Based on the “HANDY” biophysical model and the Goodwin economic model, a merged model was developed to simulate the dynamics of an integrated system associating natural resources and economics.
-          <p>Interactive UI: TO BE UPDATED
-          <p>
-          <p>Do Google search trends allow us to better understand residential adoption of solar? (2017-2018)
-          <p>Group members: Ghida Ismail, Ryan Williams
-          <p>Supervisor: Varun Rai, PhD
-          <p>Based on the analysis of Google Trends data, PV installation data, energy usage data as well as demographic data, new predictive models were built and tested as a step to study whether internet or online social media activity will improve the prediction of the PV diffusion at different geographic and time scales in the United States.  
-          <span className="image main"><img src={pic04} alt="" /></span>
-          <p>Bachelor’s Thesis: The Climatic Effects of Tropospheric Ozone in summer around China (2015-2016)
-          <p>Supervisor: Shu Li, PhD
-          <p>In the study, climate data for China during the summers of 1850 and 2001-2010 was used in Regional Climate Model 4.0 (RegCM4) to simulate the distribution and variation of tropospheric ozone and other related factors. The modelling products as well as the observational data revealed the variation of ozone and its impacts on the radiation, temperature, wind fields and precipitation in summer after Industrial Revolution around China.
         </article>
 
         <article id="about" className={`${this.props.article === 'about' ? 'active' : ''} ${this.props.articleTimeout ? 'timeout' : ''}`} style={{display:'none'}}>
